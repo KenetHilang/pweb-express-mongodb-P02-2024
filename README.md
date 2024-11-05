@@ -1,6 +1,6 @@
 # pweb-express-mongodb-P02-2024
 
-# Praktikum Pemrograman Web Kelompok P02 2024
+# Praktikum Pemrograman Web Express Kelompok P02 2024
 
 **KELOMPOK P02**
 | Nama | NRP |
