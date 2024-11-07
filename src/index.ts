@@ -1,7 +1,7 @@
 import express from "express";
 import connectDB from "./db-connection";
 import bookrouter from "./routes/book.route";
-
+import authrouter from './routes/auth.route'
 const app = express();
 
 app.use(express.json());
@@ -12,7 +12,9 @@ app.get("/", (_, response) => {
 });
 
 app.use("/books", bookrouter);
+app.use("/auth", authrouter);
 const PORT = 4000;
 app.listen(PORT, () => {
-  console.log('Express is running on Port ${PORT}');
+  console.log(`Express is running on Port ${PORT}`);
 });
+
