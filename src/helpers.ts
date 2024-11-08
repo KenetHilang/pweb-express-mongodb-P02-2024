@@ -1,4 +1,3 @@
-
 export default function formatResponse(
     status: "failed" | "error" | "success",
     message: string,
@@ -9,5 +8,17 @@ export default function formatResponse(
       status,
       message,
       data,
+    };
+  }
+
+  export function HealthCheck(
+    status: "success" | "failed",
+    message: "Hello World",
+    date: any = new Date().toDateString()
+  ) {
+    return {
+      status,
+      message,
+      date,
     };
   }

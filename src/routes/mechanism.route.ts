@@ -1,6 +1,5 @@
-
 import MechanismController from "../controllers/mechanism.controller";
-import { auth } from "../middleware/auth"; // Import the auth
+import { auth } from "../middleware/auth"; 
 import { Router } from "express";
 
 const router: Router = Router();
