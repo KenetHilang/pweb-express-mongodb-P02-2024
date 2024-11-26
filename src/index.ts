@@ -4,9 +4,12 @@ import bookrouter from "./routes/book.route";
 import authrouter from './routes/auth.route';
 import mechanismrouter from './routes/mechanism.route';
 import { HealthCheck } from "./helpers";
+import cors from "cors";
+
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 connectDB();   
 // check endpoint
 app.get("/", (_, response) => {

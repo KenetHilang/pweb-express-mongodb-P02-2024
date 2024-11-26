@@ -5,10 +5,10 @@ import { auth } from '../middleware/auth';
 const router = Router();
 const bookController = new BookController();
 
-router.post('/',auth, bookController.addBook);
-router.get('/',auth, bookController.getAllBooks);
-router.get('/:id', auth, bookController.getBookById);
-router.patch('/:id', auth, bookController.modifyBook);
-router.delete('/:id', auth, bookController.removeBook);
+router.post('/', bookController.addBook);
+router.get('/', bookController.getAllBooks);
+router.get('/:id', bookController.getBookById);
+router.patch('/:id', bookController.modifyBook);
+router.delete('/:id', bookController.removeBook);
 
 export default router;
